@@ -18,9 +18,9 @@
 pkgbase="zfs-linux-nrz"
 pkgname=("zfs-linux-nrz" "zfs-linux-nrz-headers")
 _zfsver="2.3.1"
-_kernelver="6.13.6.nrz1-1"
-_kernelver_full="6.13.6.nrz1-1"
-_extramodules="6.13.6-1-nrz"
+_kernelver="6.13.9.nrz1-1"
+_kernelver_full="6.13.9.nrz1-1"
+_extramodules="6.13.9-1-nrz"
 
 pkgver="${_zfsver}_$(echo ${_kernelver} | sed s/-/./g)"
 pkgrel=1
