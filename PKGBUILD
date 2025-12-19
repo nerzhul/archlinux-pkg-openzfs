@@ -17,10 +17,10 @@
 #
 pkgbase="zfs-linux-nrz"
 pkgname=("zfs-linux-nrz" "zfs-linux-nrz-headers")
-_zfsver="2.3.4"
-_kernelver="6.16.11.nrz1-1"
-_kernelver_full="6.16.11.nrz1-1"
-_extramodules="6.16.11-1-nrz"
+_zfsver="2.4.0"
+_kernelver="6.18.2.nrz1-1"
+_kernelver_full="6.18.2.nrz1-1"
+_extramodules="6.18.2-1-nrz"
 
 pkgver="${_zfsver}_$(echo ${_kernelver} | sed s/-/./g)"
 pkgrel=1
@@ -28,7 +28,7 @@ makedepends=("linux-nrz-headers=${_kernelver}")
 arch=("x86_64")
 url="https://openzfs.org/"
 source=("https://github.com/openzfs/zfs/releases/download/zfs-${_zfsver}/zfs-${_zfsver}.tar.gz")
-sha256sums=("9ec397cf360133161a1180035f3e7d6962186ed2b3457953a28d45aa883fa495")
+sha256sums=("7bdf13de0a71d95554c0e3e47d5e8f50786c30d4f4b63b7c593b1d11af75c9ee")
 license=("CDDL")
 depends=("kmod" "zfs-utils=${_zfsver}" "linux-nrz=${_kernelver}")
 
